@@ -1,31 +1,54 @@
 body {
-    font-family: 'Source Serif Pro', serif;
-    color: #FFFFFF;
-    background-color: #FF86BF;
+    font-family: sans-serif;
+    background-color: #e79fcc;
 }
 
-.container {
-    padding-top: 5%;
-    max-width: 500px;
-    margin: 15px auto;
-}
-
-section {
-    background: #D089AA;
-    font-size: large;
+h1 {
     text-align: center;
-    border-radius: 20px;
-    padding: 2%;
+    margin-bottom: 20px;
 }
 
-#title {
-    margin-bottom: 30px;
-    text-transform: uppercase;
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-#ans {
-    margin-top: 2%;
-    background-color: cornflowerblue;
-    font-weight: bold;
+label {
+    width: 120px;
+    margin-right: 10px;
 }
 
+input[type="number"] {
+    width: 100px;
+    padding: 5px;
+    border: 3px solid rgb(206, 42, 165);
+    margin-bottom: 10px;
+}
+
+#tableContainer {
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 500px;
+}
+
+#multiplicationTable {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#multiplicationTable th, #multiplicationTable td {
+    padding: 10px;
+    border: 1px solid rgb(136, 71, 111);
+}
+
+#multiplicationTable th:first-child, #multiplicationTable td:first-child {
+    position: sticky;
+    top: 0;
+    background-color: #ad6d95;
+}
+
+#multiplicationTable th:first-child {
+    left: 0;
+}
