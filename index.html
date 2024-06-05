@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Dynamic Multiplication Table</title>
 </head>
 <body>
-    <header>
-
-    </header>
-    <main>
-
-    </main>
-    <footer>
-        
-    </footer>
+    <div class="container">
+        <section>
+            <h3 id="title" class="text-center">Dynamic Multiplication Table</h3>
+            <p style="text-align:center;font-size:12px;margin-bottom: 50px;margin-top: -30px"></p>
+            <form>
+                <div class="form-group">
+                    <span class="small">Multipliler</span>
+                    <div class="col-md-12">
+                        <input type="number" id="txtNumber" class="form-control" placeholder="Number" min="-50" max="50">
+                        <input type="number" id="txtNumber" class="form-control" placeholder="Number" min="-50" max="50">
+                    </div>
+                    <span class="small">Multiplicand</span>
+                    <div class="col-md-12">
+                        <input type="number" id="txtNumber" class="form-control" placeholder="Number" min="-50" max="50">
+                        <input type="number" id="txtNumber" class="form-control" placeholder="Number" min="-50" max="50">
+                    </div>
+                </div>
+                <div>
+                    <div id="generate" class="form-group">
+                        <input type="submit" id="btnGenerate" value="Get Table">
+                    </div>
+                </div>
+                <div id="ans"></div>
+            </form>
+        </section>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
